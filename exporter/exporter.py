@@ -67,12 +67,12 @@ def getCosts():
     role_arns = []
     regions = ["us-east-1", "us-east-2", "us-west-1", "us-west-2"]
 
-    for arn in role_arns:
-        service_cost_mapping[arn] = {}
-        for region in regions:
-            service_cost_mapping[arn][region] = {}
-            for service in response["ResultsByTime"][0]["Groups"]:
-                service_cost_mapping[arn][region][service] = 
+    # for arn in role_arns:
+    #     service_cost_mapping[arn] = {}
+    #     for region in regions:
+    #         service_cost_mapping[arn][region] = {}
+    #         for service in response["ResultsByTime"][0]["Groups"]:
+    #             service_cost_mapping[arn][region][service] = 
                 
 
     return service_cost_mapping
